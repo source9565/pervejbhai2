@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pervej Bhai 🔥</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: url('https://static.vecteezy.com/system/resources/previews/051/167/728/non_2x/the-football-stadium-is-empty-during-the-day-clean-grass-no-markings-copy-space-horizontal-format-photo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff5722;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 87, 34, 0.7);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ff5722;
+            text-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+        }
+
+        .subscriber-count {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .highlight {
+            background-color: #ff5722;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .timer {
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+            min-width: 200px;
+        }
+
+        .btn-telegram {
+            background: linear-gradient(45deg, #0088cc, #25a2c1);
+            color: white;
+        }
+
+        .btn-channel {
+            background: linear-gradient(45deg, #ff5722, #ff9800);
+            color: white;
+        }
+
+        .btn-betting {
+            background: linear-gradient(45deg, #4CAF50, #8BC34A);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #ff5722;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .timer {
+                font-size: 1.5rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+                min-width: 160px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .subscriber-count {
+                font-size: 1rem;
+            }
+            
+            .timer {
+                font-size: 1.3rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="logo.jpg" alt="Pervej Bhai Logo" class="logo">
+        <h1>ᴘᴇʀᴠᴇᴊ ʙʜᴀɪ 🔥</h1>
+        <div class="subscriber-count">70,712 subscribers</div>
+        
+        <div class="tagline">ᴘᴇʀᴠᴇᴊ ʙʜᴀɪ ɴᴀᴀᴍ ʜɪ ᴋᴀᴀғɪ 🔥</div>
+        
+        <div class="highlight">Back To Back 74/68 IPL Match Pass ✌️😍</div>
+        
+        <div class="timer" id="timer">01:00</div>
+        
+        <div class="buttons">
+            <a href="https://telegram.me/+DYd4iYuGjstjZTA1" class="btn btn-channel" style="animation-delay: 0.4s; height: 60px;">Join [ᴘᴇʀᴠᴇᴊ ʙʜᴀɪ 🔥] Channel</a>
+        </div>
+        
+        <div class="footer">
+            <p>ᴘᴇʀᴠᴇᴊ ʙʜᴀɪ 🔥</p>
+        </div>
+    </div>
+
+    <script>
+        // 60-second timer
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.textContent = "00:00";
+                    // You can add code here to execute when timer reaches 0
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const sixtySeconds = 60,
+                display = document.querySelector('#timer');
+            startTimer(sixtySeconds, display);
+            
+            // Button hover effects
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+        };
+    </script>
+</body>
+</html>
